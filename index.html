@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>animated sticky menubar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="stickynav.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+  <body>
+      <wrapper>
+
+<section class="sec1" id="home">
+    <div class="menu">
+    <button id="hball"class="ball b1">
+        <p class="bmenu">Home</p></button>
+     <button id="pball" class="ball b2">
+         <p class="bmenu">Portfolio</p></button>
+     <button id="rball" class="ball b3">
+        <span><p class="bmenu">Resume</p></span></button>
+     <button id="cball" class="ball b4">
+        <span><p class="bmenu">Contact</p></span></button>
+    </div>
+  <div id="down" class="container">
+    <a class="scroll" href="#skills">
+    <span class="circle">
+      <i class="fa fa-arrow-down"></i>
+    </span>
+    <span class="pulse"></span>
+  </a>
+  </div>
+</section>
+<section class="sec2" id="skills">
+   
+  <section>
+					<progress value="70" max="100"></progress><span>JavaScript/jQuery</span>
+					<progress value="80" max="100"></progress><span>HTML5/CSS3</span>
+					<progress value="30" max="100"></progress><span>NodeJS</span>
+					<progress value="40" max="100"></progress><span>Java/PHP</span>
+					<progress value="30" max="100"></progress><span>MySQL</span>
+					<progress value="40" max="100"></progress><span>Photoshop</span>
+					</section>
+</section>
+<section class="sec3" id="projectCards">
+    
+  <div class="scene scene--cards">
+  <div class="cards1">
+<div class="cards__face cards__face--front">PROJECT1</div>
+    <div class="cards__face cards__face--back" style="overflow:hidden; z-index: 5">
+        <img src="ag.png" style="width:100%; height:100%;">
+<!-- <iframe src="http://cathexistrading.com/index.html" frameborder="0" style="overflow:hidden;height:100%;width:100%, z-index:-5"></iframe> -->
+  </div>
+</div>
+    </div>
+<div class="scene scene--cards">
+  <div class="cards2">
+   <div class="cards__face cards__face--front">PROJECT2</div>
+    <div class="cards__face cards__face--back" style="overflow:hidden; z-index: 5">
+         <img src="cath.png" style="width:100%; height:100%;">
+   <!-- <iframe src="http://www.atlanticgentrade.co.uk/" frameborder="0" style="overflow:hidden;height:100%;width:100%, z-index:-5"></iframe>-->
+  </div>
+</div>
+    </div>
+<div class="scene scene--cards">
+  <div class="cards3">
+    <div class="cards__face cards__face--front">PROJECT3</div>
+    <div class="cards__face cards__face--back" style="overflow:hidden; z-index: 5">
+        <img src="am.png" style="width:100%; height:100%;">
+    <!--<iframe src="https://www.amrita.edu/center/e-learning-research-lab" frameborder="0" style="overflow:hidden;height:100%;width:100%, z-index:-5"></iframe>-->
+  </div>
+</div>
+    </div>
+<div class="scene scene--cards">
+  <div class="cards4">
+   <div class="cards__face cards__face--front">PROJECT4</div>
+       <div class="cards__face cards__face--back" style="overflow:hidden; z-index: 5">
+        <img src="am.png" style="width:100%; height:100%;">
+</div>
+    </div>
+    </div>
+</section>
+<section class="sec5" id="contacts">
+     
+          <button class="card">
+  <div class="row clearfix">
+       <p><span class="left small no-space">shailaja.nnm@gmail.com </span></p>
+    <p><span class="right med">5875998310</span></p>
+  </div>
+  <div class="row">
+    <p><span class="big">W</span>eb <span class="big">D</span>eveloper</p>
+  </div>
+  <div class="row">
+    <p><span class="med">218 A</span><span class="small">5303 </span><span class="med">25</span><span class="small">Ave NW</span><span class="med">E</span><span class="small">dmonton</span>
+    </p>
+  </div>
+</button>
+          
+          </section>
+      </wrapper>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script>
+
+						$(window).on('scroll', function() {
+							if ($(this).scrollTop() > 1550) {
+								if (!$('.navbar').hasClass('black')) {
+									$('.navbar').addClass('black');
+								}
+							} else {
+								if ($('.navbar').hasClass('black')) {
+									$('.navbar').removeClass('black');
+								}
+							}
+                            
+						});
+    
+
+var cards1 = document.querySelector('.cards1');
+cards1.addEventListener( 'click', function() {
+  cards1.classList.toggle('is-flipped1');
+});
+var cards2 = document.querySelector('.cards2');
+cards2.addEventListener( 'click', function() {
+  cards2.classList.toggle('is-flipped1');
+});
+var cards3 = document.querySelector('.cards3');
+cards3.addEventListener( 'click', function() {
+  cards3.classList.toggle('is-flipped1');
+});
+var cards4 = document.querySelector('.cards4');
+cards4.addEventListener( 'click', function() {
+  cards4.classList.toggle('is-flipped1');
+});
+
+</script>
+      <script>
+          $("#hball").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#home").offset().top},
+        'slow');
+});
+$("#pball").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#projectCards").offset().top},
+        'slow');
+});
+          $("#rball").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#skills").offset().top},
+        'slow');
+});
+          $("#cball").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#contacts").offset().top},
+        'slow');
+});
+          
+      </script>
+<script type="text/javascript">
+$(window).scroll(function() {
+
+  $('progress').each(function() {
+    var max = $(this).val();
+    $(this).val(0).animate({ value: max },4000);
+     $(window).unbind('scroll');
+
+			});
+});
+
+</script>
+</body>
+</html>
