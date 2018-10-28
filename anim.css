@@ -1,0 +1,56 @@
+.test
+{
+    animation-name: ballDown;
+    animation-duration: 30s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes ballDown
+{
+    
+  	0% {
+				transform: translateY(40px);
+		}
+		10% {
+				transform: translateY(250px);
+		}
+    20%
+    {
+        transform: translateY(300px);
+    }
+    30%
+    {
+     transform: translateY(350px);
+        
+    }
+    40%
+    {
+      transform: translateY(400px);
+        
+    }
+    50%
+    {
+        transform: translateY(450px);
+
+    }
+    60%
+    {
+        transform: translateY(550px);
+    }
+    70%
+    {
+        transform: translateY(650px);
+    }
+    80%
+    {
+       transform: translateY(750px);
+    }
+    90%
+    {
+       transform: translateY(850px);
+    }
+    100%
+    {
+    transform: translateY(40px);
+    }
+}

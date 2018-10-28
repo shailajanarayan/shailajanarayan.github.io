@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="bground">
+    <div id="overlay">
+         <h1>SHAILAJA NARAYAN</h1>
+    <h2>WEB DEVELOPER</h2>
+        <ul>
+        <li>
+            CANADA
+        </li>
+        <li>
+            +15875998310
+        </li>
+        <li>
+            shailaja.nnm@gmail.com
+        </li>
+        </ul>
+        <h1>
+        WORK EXPERIENCE
+        </h1>
+       <section class="timeline">
+  <ul>
+    <li>
+      <div>
+          <time>November,2017- </time> <h2>Amrita E-Learning Research Lab (AERL), India</h2>
+          <p>Worked on a school software project – ‘Vidya-Dhan’ using J2EE technology. It has various business modules to handle education materials and controlling students’ records and school management details.</p>
+          <p>o	Integrating data from various back-end services and databases using web services.
+o	Testing, fixing bugs and maintenance for Websites.
+o	Creating and designing website layouts.
+o	Bug fixing of existing websites.
+o	Writing maintainable, scalable, responsive, and cross-browser code.
+o	Performing browser testing and debugging.
+o	Discussing options with clients to make sure websites meet their needs as well as the needs of their customers
+</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>June,2017-October,2017</time> <h2>Concentrix, Canada</h2>
+          <p>o	Providing customer service and understanding the needs of the client.
+o	Documenting problems of a product in large numbers & reporting to company and concerned department.
+o	Addressing customer service inquiries in a timely and accurate fashion.
+o	Giving accurate and appropriate information to answer questions, troubleshoot issues, and resolve complaints.  
+</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>March,2015-March,2017</time><h2>Aabasoft Technologies,India</h2><p>o	Provided direct assistance to head web developer 
+o	Managed websites and designs for clients around the country 
+o	Bug fixing of existing website
+o	Performed weekly assessments of all websites and software to look for potential problems or crashes
+</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>June,2014-March,2015</time> <h2>JUNIOR WEB DEV: Nest Cyber Campus-Nest Group Company, India</h2><p>Nest E-learning System that coordinates and manages a study center ‘NestInfoSystem’</p> 
+      </div>
+    </li>
+       <li>
+      <div>
+          <time>2013-2014</time> <H1>INTERN:Nest Cyber Campus-Nest Group Company, India</H1><P>Nest E-learning System that coordinates and manages a study center ‘NestInfoSystem</P>
+        </div>
+    </li>
+      <div id="edu"><h1>EDUCATION</h1></div>
+      
+    <li>
+      <div>
+        <time>2011-2013</time> <H1>M.TECH CHEM ENGG</H1><P></P>
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2006-2010</time><H1>B E CHEM ENGG</H1> 
+      </div>
+    </li>
+  </ul>
+</section>
+    </div>
+    </div>
+    <script>
+    (function() {
+
+  'use strict';
+
+  // define variables
+  var items = document.querySelectorAll(".timeline li");
+
+  // check if an element is in viewport
+  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function callbackFunc() {
+    for (var i = 0; i < items.length; i++) {
+      if (isElementInViewport(items[i])) {
+        items[i].classList.add("in-view");
+      }
+    }
+  }
+
+  // listen for events
+  window.addEventListener("load", callbackFunc);
+  window.addEventListener("resize", callbackFunc);
+  window.addEventListener("scroll", callbackFunc);
+
+})();
+    </script>
+</body>
+</html>

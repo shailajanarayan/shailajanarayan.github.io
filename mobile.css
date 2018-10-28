@@ -1,0 +1,29 @@
+#home
+{
+    background-position: center;
+}
+section.sec1
+{
+    background: url(codesml.jpg);
+    width:38.5em;
+height:112vh;
+background-size: cover;
+}
+
+#home > div.text-block
+{
+     margin-top:-15.625em;
+    margin-left:4em;
+     width:13.5em;
+    height:6.625em;
+    display:block;
+}
+
+#hball
+{
+     --d: 15px;
+  width: var(--d);
+  height: var(--d);
+margin-right:-7em;
+margin-top:10em;
+}
