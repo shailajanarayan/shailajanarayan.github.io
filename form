@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+	 <link rel="stylesheet" href="styling.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="ajaxscript.js"></script>
+</head>
+<body id="overWrite">
+
+<!-- Navigation -->
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Real Estate 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="res-form.html">Residential lease</a>
+         <a href="#">Commercial Lease</a>    
+        <a href="#">Eviction notice</a>
+    </div>
+  </div> 
+     <div class="dropdown">
+    <button class="dropbtn">Family 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Pre-nuptial</a>
+         <a href="#">Separation</a>    
+        <a href="#">Cohabitation</a>
+    </div>
+  </div>
+    <div class="dropdown">
+    <button class="dropbtn">Business
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Incorporation</a>
+         <a href="#">Partnership</a>    
+        <a href="#">Confidentiality</a>
+    </div>
+  </div>
+     <div class="dropdown">
+    <button class="dropbtn">Financial
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Bill of sale</a>
+         <a href="#">Loan </a>    
+        <a href="#">Promissory Note</a>
+    </div>
+  </div>
+</div>
+<section class="form-sec">
+<h1 id="lease-head">Lease Details</h1>
+<div id="mainform">
+<div id="form">
+<div>
+<label>Name :</label>
+<input id="owner-name" type="text" onkeyup="myFunction()">
+<label>Address :</label>
+<input id="address" type="text" onkeyup="myFunction()">
+<label>City :</label>
+<input id="city" type="text" onkeyup="myFunction()">
+<label>State :</label>
+<input id="state" type="text" onkeyup="myFunction()">
+<label>Postal Code :</label>
+<input id="zip" type="text" onkeyup="myFunction()">
+<input id="submit-form" type="button" value="Submit">
+</div>
+</div>
+</div>
+</section>
+<section class="form-preview">
+<div>
+<form>
+    <img style="display:none" src="form.png" crossorigin="anonymous"/>
+</form>
+
+<canvas id="canvas" />
+
+</div>
+</section>
+</body>
+<script>
+var canvas = document.getElementById('canvas'),
+        ctx = canvas.getContext('2d');
+canvas.width = $('img').width();
+canvas.crossOrigin = "Anonymous";
+canvas.height = $('img').height();
+ctx.drawImage($('img').get(0), 0, 0);
+ctx.font = "12pt TimesNewRoman";
+$(document).on('input','#owner-name',function(){
+
+    //redraw image
+    ctx.clearRect(50,600,200,10);
+	ctx.drawImage($('img').get(0), 50,600,200,10);
+    //refill text
+    ctx.fillStyle = "maroon";
+    ctx.fillText($(this).val(),150,600);
+});
+$(document).on('input','#address',function(){
+    //redraw image
+   ctx.clearRect(50,620,200,10);
+   ctx.clearRect(50,150,150,10);
+    //ctx.drawImage($('img').get(0), 0, 0);
+    //refill text
+    ctx.fillStyle = "maroon";
+    ctx.fillText($(this).val(),180,620);
+	ctx.fillText($(this).val(),150,162);
+});
+$(document).on('input','#city',function(){
+    //redraw image
+   //ctx.clearRect(0,0,canvas.width,canvas.height);
+    //ctx.drawImage($('img').get(0), 0, 0);
+    //refill text
+    ctx.fillStyle = "maroon";
+    ctx.fillText($(this).val(),200,640);
+	ctx.fillText($(this).val(),135,180);
+});
+$(document).on('input','#state',function(){
+    //redraw image
+   //ctx.clearRect(0,0,canvas.width,canvas.height);
+    //ctx.drawImage($('img').get(0), 0, 0);
+    //refill text
+    ctx.fillStyle = "maroon";
+    ctx.fillText($(this).val(),430,640);
+	ctx.fillText($(this).val(),410,180);
+});
+$('button').click(function(){
+    console.log(ctx.getImageData(50, 50, 100, 100));
+});
+
+</script>
+</html>
