@@ -1,0 +1,63 @@
+@media only screen and (min-width: 992px)
+{
+    nav
+    {
+        display:none !important;
+
+    }
+    body > header > div > div > div.col-lg-5
+    {
+        display: block !important;
+    }
+   #sec1 > header > div > div > div.col-lg-5
+{
+    display: block;
+}
+    body
+    {
+        margin: 0;
+        padding: 0;
+    }
+    header 
+    {
+
+        text-align: center;
+        color: #fff;
+        background:#2196F3;
+    }
+    body > header > div > div > div.col-lg-12 > div > span.name
+    {
+        display: block;
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 2em;
+        margin-left:0.3em;
+        font-weight: 700;
+
+    }
+    header img.profile-img
+    {
+        margin:0 auto 1.25em;
+    }
+    header .intro-text .skills
+    {
+        font-size: 1.25em;
+        font-weight: 300;
+    }    
+    img
+    {
+        vertical-align: middle;
+    }
+    body > header > div > div > div.col-lg-12 > div
+    {
+        margin-left:0.4em;
+    }
+
+    body
+    {
+        margin: 0;
+    }
+   
+   
+
+}
